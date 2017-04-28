@@ -1,11 +1,11 @@
 
 TrainEmbMultiTask
 ======
-TrainEmbMultiTask is a package for training character representation with multitask training. It is proposed for enhancing Chinese Word Segmentation task in our ACL 2017 paper [Neural word segmentation with rich pretraining](insert paper link), while it can be extended to other task which need to build a better sub-unit representation (e.g. character representation for word segmentation; word representation for entity recognition.) through multitask training. Currently the code support training in four different tasks. The output `.pmodel, .pchar, .pbichar` can be loaded by [RichWordSegmentor](https://github.com/jiesutd/RichWordSegmentor) to initialize the character representation parameters and input character embedding and character bigram embedding, respectively.
+TrainEmbMultiTask is a package for training character representation with multitask training. It is proposed for enhancing Chinese Word Segmentation task in our ACL 2017 paper [Neural word segmentation with rich pretraining](insert_paper_link), while it can be extended to other task which need to build a better sub-unit representation (e.g. character representation for word segmentation; word representation for entity recognition.) through multitask training. Currently the code support training in four different tasks. The output `.pmodel, .pchar, .pbichar` can be loaded by [RichWordSegmentor](https://github.com/jiesutd/RichWordSegmentor) to initialize the character representation parameters and input character embedding and character bigram embedding, respectively.
 
 Structure:
 =====
-It is a simple two-layer feed forward neural networks which support multitask training. All input task instances are randomly choice during training (user can configure the instance ratio of different tasks.).
+It is a simple two-layer feed forward neural networks which support multitask training. All input task instances are randomly choice during training (user can configure the instance ratio of different tasks.). More details can be found in our paper.
 
 
 Installation:
