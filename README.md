@@ -14,8 +14,7 @@ Installation:
 * Open [CMakeLists.txt](CMakeLists.txt) and change " ../LibN3L/" into the directory of your [LibN3L](https://github.com/SUTDNLP/LibN3L) package.
 
 
-`cmake .`  
-
+`cmake .`    
 `make JointTrainemb`
 
 Training character representation:   
