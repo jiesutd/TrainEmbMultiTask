@@ -56,7 +56,7 @@ Our code may generate may outputs, like the decoded result of development data, 
 The `.pmodel` file contains parameters (weights) of input character representation network.  
 The `.pchar` file contains character embeddings after the multitask training.  
 The `.pbichar` file contains character bigram embeddings after the multitask training.    
-(We suggest you combine the `.pchar/.pbichar` embeddings with the initial input pretrained char/bichar embeddings together, i.e. if char/bichar exists in the multitask output embedding, then keep the multitask output embedding; else keep the initial input pretrain embedding. This can effectively reduce OOV and get a better performance in following tasks.)  
+(We suggest you combine the `.pchar/.pbichar` embeddings with the initial input pretrained char/bichar embeddings together, i.e. if char/bichar exists in the multitask output embedding, then keep the multitask output embedding; else keep the initial input pretrain embedding. This can effectively reduce OOV and get a better performance in following tasks. To do this, use my script [MergeEmb.py](MergeEmb.py).)  
 
 
 Cite:
